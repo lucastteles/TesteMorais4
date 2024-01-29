@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra soluções de energia solar sustentável para sua casa ou empresa. Nossos painéis solares eficientes e sistemas de armazenamento de energia ajudam a economizar dinheiro e reduzir sua pegada de carbono. Conheça os benefícios da energia solar hoje.">
+    <!-- <meta property="og:url" content="http://www.moraissol.netflify.app"> -->
+    <meta property="og:image" content="https://flic.kr/p/2pveiZs"> 
+    <meta property="og:type" content="website">
+    <title>MoraisSol - Energia Solar</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="icon" href="icon/Logo.ico" type="image/x-icon"> 
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <section class="barra">
+        <input type="checkbox" id="check">
+        <header>
+            <a href="index.html">
+                <img src="images/LogoNova.png" alt="Logo" class="sol">
+            </a>
+            <div class="navegacao">
+                <a href="index.html">Inicio</a>
+                <a href="comofunciona.html">Como Funciona </a>
+                <a href="#Quemsomos">Quem somos</a>
+                <a href="https://api.whatsapp.com/send?phone=5521993744477" class="btn">Orçamento</a>     
+            </div>
+            <label for="check">
+                <i class="fas fa-bars menu-btn"></i>
+                <i class="fas fa-times close-btn"></i>
+            </label>
+        </header>
+
+        <div class="inicio">
+            <div class="content">
+                <h1 class="titulo">Reduza sua conta de luz em até 95% com parcelas que cabem no seu bolso!</h1>
+                <a href="#formulario" class="btn">Calcular economia</a>
+            </div>
+    
+            <div class="image">
+                <img src="images/imagemprincipal.png" alt="energia limpa e renovável">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="conta">
+
+        <div class="solucao">
+            <div class="energia">
+                <h1 class="titulo-energia">A solução definitiva para a <span>economia de energia</span> em sua casa ou estabelecimento</h1>
+                <p class="descricao">A instalação de um sistema fotovoltaico é muito simples e não demanda modificações
+                    significativas na infraestrutura
+                    elétrica existente. Além disso, os painéis solares não causam danos ao meio ambiente, seja durante sua
+                    instalação ou
+                    durante o seu funcionamento.</p>
+                <p class="descricao">É importante destacar que a energia solar é uma fonte
+                    renovável e constitui
+                    a principal fonte de energia para o nosso
+                    planeta.</p>
+            </div>
+    
+            <div class="image-conta">
+                <img src="images/solucao.png" alt="conta de luz reduzida">
+            </div>
+        </div>
+    </section>
+
+<section id="formulario" class="formulario-energia">
+    <h1 class="titulo-form" id="titulo-form">Descubra quanto você irá economizar com <span>energia solar</span></h1>
+
+
+    <div class="container-form" id="container-form">
+        <div class="heading">calculadora solar</div>
+        <form id="calculatorForm" action="#">
+
+            
+            <div class="card-details">
+
+                <div class="card-box">
+                    <span class="details">UF</span>
+                    <select name="uf" id="uf">
+                        <option value="" disabled selected>Selecione um UF</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </div>
+
+                <div class="card-box">
+                    <span class="details">Cidade</span>
+                    <select name="cidade" id="cidade" required>
+                        <option value="" disabled selected>Selecione uma Cidade</option>
+                        <option value="Acre">Acre</option>
+                        <option value="Alagoas">Alagoas</option>
+                        <option value="Amapá">Amapá</option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Bahia">Bahia</option>
+                        <option value="Ceará">Ceará</option>
+                        <option value="Distrito Federal">Distrito Federal</option>
+                        <option value="Espírito Santo">Espírito Santo</option>
+                        <option value="Goiás">Goiás</option>
+                        <option value="Maranhão">Maranhão</option>
+                        <option value="Mato Grosso">Mato Grosso</option>
+                        <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                        <option value="Minas Gerais">Minas Gerais</option>
+                        <option value="Pará">Pará</option>
+                        <option value="Paraíba">Paraíba</option>
+                        <option value="Paraná">Paraná</option>
+                        <option value="Pernambuco">Pernambuco</option>
+                        <option value="Piauí">Piauí</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                        <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                        <option value="Rondônia">Rondônia</option>
+                        <option value="Roraima">Roraima</option>
+                        <option value="Santa Catarina">Santa Catarina</option>
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Sergipe">Sergipe</option>
+                        <option value="Tocantins">Tocantins</option>
+                    </select>
+                </div>
+
+                <div class="card-box">
+                    <span class="details">Concessionária</span>
+                    <select name="uf" id="fornecedor" required>
+                        <option value="" disabled selected>Selecione uma concessionária</option>
+                        <option value="Light">Light</option>
+                        <option value="Elektro">Elektro</option>
+                        <option value="Eletropaulo">Eletropaulo</option>
+                        <option value="Cemig">Cemig</option>
+                        <option value="Copel">Copel</option>
+                        <option value="Celesc">Celesc</option>
+                        <option value="(CPFL-Piratininga)">(CPFL-Piratininga)</option>
+                        <option value="(CPFL-Paulista)">(CPFL-Paulista)</option>
+                        <option value="Bandeirante Energia S/A.">Bandeirante Energia S/A.</option>
+                        <option value="Companhia de Eletricidade do Estado da Bahia(Coelba)">Companhia de Eletricidade do Estado da Bahia(Coelba)</option>
+                        <option value="CEB Distribuição S/A">CEB Distribuição S/A</option>
+                        <option value="Espírito Santo Centrais Elétricas S/A.">Espírito Santo Centrais Elétricas S/A.</option>
+                        <option value="Empresa Luz e Força Santa Maria S/A.">Empresa Luz e Força Santa Maria S/A.</option>
+                        <option value="Celg Distribuição S.A.">Celg Distribuição S.A.</option>
+                        <option value="Companhia Energética do Rio Grande do Norte">Companhia Energética do Rio Grande do Norte</option>
+                        <option value="Companhia de Energia Elétrica do Estado do Tocantins">Companhia de Energia Elétrica do Estado do Tocantins</option>     
+                    </select>
+                </div>
+
+                <div class="card-box">
+                    <span class="details">Valor da conta de energia</span>
+                    <input type="number" id="valorConta" step="0.01" placeholder="R$" required>
+                </div>
+
+            </div>
+
+            <div class="button">
+                <button type="submit">Calcular</button>
+            </div>
+        </form>  
+        <div id="resultado"></div>
+        <div id="graficoContainer" style="display:none;">
+            <canvas id="graficoEconomiaTotal"></canvas>
+            <a href="https://api.whatsapp.com/send?phone=5521993744477"style="text-decoration: none;"><button class="bnt-fale">Fale Conosco <i class="fab fa-whatsapp"></i></button></a>
+        </div>        
+    </div>
+</section>
+
+
+    <section class="funcionamento">       
+            <h1 class="como-funciona">Quer saber como funciona <br> um sistema de <span>energia solar?</span></h1>
+            <a href="comofunciona.html" class="btn-saiba">Saiba mais &#10148;</a>
+    </section>
+
+    <section id="Quemsomos" class="moraissol">
+        <h1 class="titulo-conheca">Conheça a <span>Moraissol</span></h1>
+    
+        <div class="section-conheca">
+            <div class="conheca">
+                <p class="sobre-nos">A <span>moraissol</span> é uma empresa inovadora e comprometida com a revolução
+                    energética sustentável. Nossa
+                    missão é transformar o cenário energético por meio da captação e utilização inteligente da energia
+                    solar.</p>
+                <p class="sobre-nos">Na <span>moraissol</span>, acreditamos que o futuro da energia é verde. Estamos
+                    empenhados em reduzir a pegada
+                    de carbono e promover a transição para fontes limpas e inesgotáveis de energia. Nossos sistemas de
+                    energia solar são
+                    projetados para maximizar a eficiência e minimizar o impacto ambiental.</p>
+            </div>
+    
+            <div class="sobre-img">
+                <img src="images/conheca.jpeg" alt="quem somos">
+            </div>
+        </div>
+        <div class="centered-button">
+            <a href="https://api.whatsapp.com/send?phone=5521993744477"><button class="economia">Simular
+                    Economia</button></a>
+        </div>
+    </section>
+  
+<section class="projeto">
+    <h1 class="titulo-projeto">Nossos <span>Projetos</span></h1>
+    <div class="container">
+
+        <div class="card">
+            <div class="card-header">
+                <img src="images/projeto1.jpeg" alt="projeto de energia solar" class="card-img" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="images/projeto3.jpeg" alt="projeto de energia solar" class="card-img" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="images/projeto2.jpeg" alt="projeto de energia solar" class="card-img" />
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="conversar"> 
+    <i class="fab fa-whatsapp"></i>      
+    <h1 class="titulo-conversar">Vamos Conversar!</h1>
+    <p class="aproveite">Explore as Vantagens da Energia Solar.</p>
+     <p class="aproveite2"> Fale Conosco Agora e Inicie sua Economia!</p>
+    <a href="https://api.whatsapp.com/send?phone=5521993744477" class="btn-whats">Solicitar Orçamento &#10148;</a>
+</section>
+
+<footer>
+   <div class="row">
+    <div class="col">
+        <img src="images/LogoNova.png" alt="logo MoraisSol" class="logo-footer">
+        </div>
+            <div class="col">
+                <h3>Contato<div class="underline"><span></span></div></h3>
+                <p class="email-id"><i class="far fa-envelope"></i> moraissol@gmail.com</p>
+                <h4><i class="fas fa-phone"></i> (21) 964162628</h4>
+                <h4><i class="fas fa-phone"></i> (21) 993744477</h4>
+            </div>
+
+            <div class="col">
+                <h3>Links<div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="#Quemsomos">Quem Somos</a></li>
+                    <li><a href="comofunciona.html">Como Funciona?</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=5521993744477">Orçamento</a></li>
+                  
+                </ul>
+            </div>
+
+            <div class="col">
+                <h3>Redes Sociais<div class="underline"><span></span></div></h3>
+                <div class="social-icons">
+                    <a href="https://instagram.com/moraissolrj?igshid=OGQ5ZDc2ODk2ZA==">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5521993744477">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+    </div>
+
+    
+
+
+   <hr>
+   <p class="copyright">Moraissol © 2024 - Todos os direitos reservados.</p>
+</footer>
+
+<div class="whats">
+    <a href="https://api.whatsapp.com/send?phone=5521993744477"><img src="images/iconewhats.png" width="75"></a>
+</div>
+ 
+</body>
+</html>

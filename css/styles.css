@@ -1,0 +1,1057 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #F3F3F4;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.barra{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url(../images/Fundoprincipal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #82858c4b;
+    z-index: 999999;
+}
+
+.sol {
+    width: 150px;
+    height: auto; 
+    object-fit: cover;  
+    transform: scale(1.1);      
+}
+
+header .navegacao a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property:background;
+}
+
+header .navegacao  .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: linear-gradient(90deg, #d27a0f, #ba8812, #cfae4b);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header .navegacao  .btn:hover{
+    color: #000;
+}
+
+header .navegacao a:not(:last-child){
+    margin-right: 30px;
+}
+
+header .navegacao a:hover{
+    color: #FAAF3B;
+}
+
+label{
+    display: none;
+}
+
+#check{
+    z-index: 3;
+    display: none;
+}
+
+/****Responsivo*****/
+@media(max-width:960px){
+    header .navegacao{
+        display: none;
+    }
+
+    header img{
+        margin-left: -66px;
+    }
+
+    label{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition-property: color;
+    }
+
+    label{
+        color: #fff;
+    }
+
+    label:hover{
+        color:#fff
+
+    }
+
+    label .close-btn{
+        display: none;
+    }
+
+    #check:checked ~ header .navegacao{
+        z-index: 2;
+        position: fixed;
+        background: rgba(24, 25, 26, 0.9); 
+      
+        top: 0;
+        left: 0;
+        bottom: 0;
+        left: 40%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #check:checked ~ header .navegacao a{
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 50;
+        letter-spacing: 2px;
+
+    }
+
+    #check:checked ~ header label .menu-btn{
+        display: none;
+    }
+
+    #check:checked ~ header label .close-btn{
+        z-index: 2;
+        display: block;
+        position: fixed;
+    }
+
+    label .menu-btn{
+        position: absolute;
+    }
+
+    header .logo{
+        position: absolute;
+        bottom: -6px;
+        
+    }
+
+    header .navegacao  .btn{
+        display: none;
+    }
+
+
+
+}
+
+
+
+
+/*Depois do nav*/
+.inicio{
+    padding: 12rem 5%;
+}
+
+.inicio{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio .content{
+    flex: 1 1 40rem;
+    padding: 6.5em;
+}
+
+.inicio .content .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #fff;  
+    background: linear-gradient(90deg, #d27a0f, #ba8812, #cfae4b);
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.inicio .content .btn:hover {
+    background: linear-gradient(90deg, #cfae4b, #ba8812, #d27a0f);
+}
+
+
+
+.inicio .content .titulo {
+    margin-bottom: 20px
+}
+
+.inicio .content .titulo{
+    font-size: 6rem;
+    color: #fff;
+}
+
+.inicio .image{
+    flex: 1 1 40rem;
+    margin-bottom: -155px;     
+}
+
+.inicio .image img{
+    width: 100%;
+}
+
+
+@media(max-width:968px){
+    html{
+        font-size: 50%;
+    }
+
+    .inicio .content .titulo{
+        font-size: 4rem;
+    }
+
+    .inicio .image{
+        flex: 1 1 40rem;
+        margin-bottom: -105px;        
+    }
+
+    
+}
+
+
+@media(max-width:450px){
+    html{
+        font-size: 40%;
+    }
+
+    .inicio .image{
+        flex: 1 1 40rem;
+        margin-bottom: -150px;           
+    }
+
+    .inicio{
+        padding: 16rem 5%;
+    }
+} 
+
+
+
+/*Conta de luz*/
+
+.conta {
+    background: linear-gradient(90deg, #f3f3f4, #d6d6f6);
+    position: relative;
+    width: 100%;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.solucao {
+    padding: 8rem 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.solucao .energia {
+    flex: 1 1 40rem;
+    padding: 1.5em;
+    order: 2;
+}
+
+.solucao .energia .titulo-energia {
+    font-size: 6rem;
+    color: #2d397b;
+}
+
+.solucao .energia .titulo-energia span {
+    color: #fff;
+    background-color: #0f3ae649;
+}
+
+.solucao .energia .descricao {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.2;
+    padding: 1rem 0;
+    color: #000;
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.conta .image-conta {
+    flex: 1 1 40rem;
+    order: 1;
+}
+
+.conta .image-conta img {
+    width: 100%;
+}
+
+@media(max-width:768px){
+    .solucao .energia .titulo-energia{
+        font-size: 4rem;
+    }
+
+    .conta {
+        min-height: 10vh;
+    
+    }
+}
+
+
+
+/*Funcionamento*/
+.funcionamento {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-image: url(../images/saibamais.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 5%;
+}
+
+
+.como-funciona {
+    color: #fff;
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 50px;
+}
+
+.como-funciona span {
+    background-color: #0f3ae649;
+    padding: 0 10px;
+}
+
+.btn-saiba {
+    color: #fff;
+    background: linear-gradient(90deg, #d27a0f, #cfae4b);
+    text-decoration: none;
+    padding: 1.5rem 5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-saiba:hover {
+    background: linear-gradient(90deg, #cfae4b, #d27a0f);
+}
+
+
+@media(max-width:768px){
+    .como-funciona{
+        font-size: 4rem;
+    }
+
+
+    .btn-saiba {
+        font-size: 15px;
+        
+    }
+
+}
+
+
+
+/*Conheça a Moraissol*/
+
+.moraissol{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url(../images/fundoconheca.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.section-conheca {
+    padding: 2rem 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-conheca .conheca{
+    flex: 1 1 40rem;
+    padding: 1.5em;
+    order: 2;
+  }
+
+
+  .titulo-conheca{
+    padding: 1em;
+    font-size: 6rem;
+    color: #2d397b;
+    text-align: center;
+  }
+
+  .titulo-conheca span{
+    background: linear-gradient(90deg, #d27a0f, #cfae4b);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .section-conheca .conheca .sobre-nos{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.3;
+    padding: 1rem 0;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .section-conheca .conheca .sobre-nos span{
+    text-transform: Uppercase;
+  }
+
+  .moraissol .sobre-img{
+    flex: 1 1 40rem;
+    order: 1;
+  }
+
+  .moraissol .sobre-img img{
+    width: 100%;
+    height: 500px;
+  }
+
+  .centered-button {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.economia{
+    color: #fff;
+    background: linear-gradient(90deg, #d27a0f, #cfae4b);
+    text-decoration: none;
+    padding: 1.5rem 8rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+
+.economia:hover {
+    background: linear-gradient(90deg, #cfae4b, #d27a0f);
+}
+
+
+@media(max-width:768px){
+    .economia{
+        margin-top: 0px;
+        font-size: 15px;
+    }
+
+    .moraissol .sobre-img img{
+        width: 100%;
+        height: 500px;
+      }
+}
+
+@media(max-width:640px){
+    .moraissol .sobre-img img{
+        width: 100%;
+        height: 400px;
+      }
+}
+
+
+/*Nossos Projetos*/
+
+.projeto{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url(../images/fundoprojetos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .titulo-projeto {
+    padding: 1em;
+    font-size: 6rem;
+    color: #2d397b;
+    text-align: center;
+}
+
+.titulo-projeto span{
+    background: linear-gradient(90deg, #d27a0f, #cfae4b);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+  
+  /* Card */
+  .card {
+    width: 400px;
+    height: auto;
+    margin: 25px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+  }
+
+  .card-img{
+    width: 100%;
+    height: 60vh;
+  }
+
+
+
+  /********************************/
+  .conversar {
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 5%;
+}
+
+.conversar .fa-whatsapp{
+   font-size: 80px;
+   color: #2d397b;
+}
+
+
+.titulo-conversar {
+    color: #000;
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 50px;
+}
+
+.aproveite{
+    color: #000;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: -35px;
+    margin-bottom: 25px;
+    
+
+}
+
+.aproveite2{
+    color: #000;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: -20px; 
+    margin-bottom: 20px;
+}
+
+
+.btn-whats {
+    color: #fff;
+    background: #06781d;
+    text-decoration: none;
+    padding: 1.5rem 5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn-saiba:hover {
+    background: linear-gradient(90deg, #cfae4b, #d27a0f);
+}
+
+
+@media(max-width:768px){
+    .aproveite{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .aproveite2{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .btn-whats {
+        font-size: 15px;
+    }
+}
+
+
+  /*FOOTER*/
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right, #979cb8, #0e0246);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+
+.logo-footer{
+    width: 180px;
+    margin-bottom: 30px;
+    transform: scale(1.1);  
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul li a:hover{
+    color: #ba8812;
+}
+
+ .social-icons .fa-whatsapp,
+ .social-icons .fa-instagram {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 40px;
+     font-size: 20px;
+     color: #000;
+     background: #fff;
+     margin-right: 15px;
+     cursor: pointer;
+ }
+
+ hr{
+    width: 90%;
+    border: 0;
+    border-bottom:1px solid #ccc;
+    margin: 20px auto;
+ }
+
+ .copyright{
+    text-align: center;
+ }
+
+ .underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top:25px;
+    left: 0;
+    overflow: hidden;
+ }
+
+ .underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top:0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+ }
+
+ @keyframes moving{
+    0%{
+        left: -20px;
+    }
+
+    100%{
+        left: 100%;
+    }
+ }
+
+ @media (max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+
+    .col{
+        flex-basis: 100%;
+    }
+
+    .col:nth-child(2), .col:nth-child(3){
+        flex-basis: 100%;
+    }
+
+ }
+
+
+/*BOTAO DO WHATS FIXO*/
+.whats{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+
+
+/*FORMULARIO*/
+.formulario-energia{
+    color: #fff;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#2d397b, #ccc);
+    padding: 2rem 5%;
+}
+
+.titulo-form{   
+    padding: 1em;
+    font-size: 6rem;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.titulo-form span{
+    background: linear-gradient(90deg, #d27a0f, #cfae4b);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: capitalize;
+
+}
+
+.container-form{
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 25px;
+     background: linear-gradient(135deg,#090452, #2d397b); 
+    font-size: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+    
+}
+
+.container-form .heading{
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0;
+    text-transform: capitalize;
+    
+}
+
+.container-form form .card-details{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .card-details .card-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+
+
+.card-details .card-box details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.card-details .card-box input,
+.card-details .card-box select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1.8px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+
+
+
+.card-details .card-box input:focus,
+.card-details .card-box input:valid,
+.card-details .card-box select:focus,
+.card-details .card-box select:valid{
+    border-color: #d27a0f;
+}
+
+form .circal-form .circal-tile{
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid;
+}
+
+form .circal-form .category{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form .button{
+    text-align: center;
+
+}
+
+form .button button{
+    padding: 10px 0;
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #2d397b, #0a0132);
+    margin-top: 20px;
+    
+}
+
+form .button button:hover{
+    background: linear-gradient(-135deg, #2d397b, #0a0132);
+}
+
+
+/*Responsivo*/
+@media(max-width:768px){
+    .container-form{
+        max-width: 100%;
+    }
+
+    form .card-details .card-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    form .circal-form .category{
+        width: 100%;
+    }
+
+    
+.titulo-form{   
+    font-size: 4rem;
+    
+    
+}
+
+.container-form .heading{
+    font-size: 4rem;
+    padding: 0 0 20px 0;
+    
+}
+
+.formulario-energia{
+    min-height: 110vh;
+}
+
+    
+}
+
+
+
+/*Resultado*/
+
+.valor-estimado,
+.valor-arredondado,
+.payback,
+.economia-total {
+    font-weight: bold;
+    
+}
+
+
+
+.resultado-titulo {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 35px;
+  
+}
+
+.investimento p{
+    font-size: 2rem;
+}
+
+
+
+
+.resultado-conta {
+    margin-bottom: 20px; /* Adicione a quantidade de espaço desejada aqui */
+  }
+
+
+
+  #graficoEconomiaTotal {
+    border-radius: 10px;
+    color: #ccc;
+    top: 0;
+    left: 0;
+}
+
+.bnt-fale{
+    color: #fff;
+    background: #06781d;
+    text-decoration: none;
+    padding: 1.5rem 5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+
+
+ 
+ @media(max-width:640px){
+    #graficoEconomiaTotal {
+        padding: none;
+        min-height: 32vh;
+       
+    }
+
+    .investimento p{
+        font-size: 2.5rem;
+    }
+
+    .bnt-fale{
+        font-size: 2rem;
+        padding: 2rem 6rem;
+      
+    }
+    
+
+   
+
+   
+}  
+
+
+
+
+
+
+
+
+  
+  
+
+
